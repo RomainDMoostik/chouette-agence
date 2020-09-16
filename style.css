@@ -7,6 +7,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    color: #FFF;
+    font-size: 18px;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -46,6 +51,8 @@ a:hover {
 
 .bloc-lg {
     padding: 100px 50px;
+    z-index: 1;
+    position: inherit;
 }
 
 .bloc-md {
@@ -100,7 +107,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc button:hover {
@@ -133,7 +140,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
@@ -171,7 +178,7 @@ a:hover {
     color: rgba(0, 0, 0, .7);
 }
 
-.d-bloc .panel icon {
+.d-bloc .panel-icon {
     border-color: rgba(0, 0, 0, .7);
 }
 
@@ -477,6 +484,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    margin: 30% 0%;
 }
 
 .icon-lg {
@@ -648,10 +656,10 @@ h6,
 p,
 label,
 .btn,
-a {
-    font-family: "helvetica";
+{
+    font-family: "Open-sans",helvetica, Arial;
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -673,26 +681,49 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
     font-size: 18px;
+    font-family: "Open-sans",helvetica, Arial;
+    line-height: 26px;
+}
+
+p.Liens {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h2.Intro {
+    font-size: 22px;
+    color: rgb(100, 100, 100);
+    margin: auto;
+    max-width: 60%;
+}
+
+h4.citation {
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
+    margin: auto;
 }
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 18px;
@@ -701,33 +732,36 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
+    color: rgb(100, 100, 100);
 }
 
 h3 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
 h1 {
-    color: #333333!important;
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: #333333;
 }
 
 h4 {
-    color: #333333!important;
+    color: #333333;
 }
 
 .icons {
@@ -736,7 +770,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -753,7 +787,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(33, 33, 33, 0.95);
     padding: 40px 40px 40px 40px;
 }
 
@@ -776,38 +810,43 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF;
+    text-shadow: 0px 5px 20px rgba(2, 2, 2, .8);
+}
+
+.tc-tangerine {
+    color: #F3976C;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #c27956;
+    color: #FFFFFF;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #cccccc;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #F3976C;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #c27956;
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #364577;
+    border-color: #364577;
 }
 
 .bg-dots-bg {
@@ -820,6 +859,7 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .bg-presentation {
@@ -874,8 +914,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -885,8 +925,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 }
 
