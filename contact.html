@@ -7,17 +7,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 		
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" > <!-- Structure --> 
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">  <!-- Icones RS -->
+		<!-- <link rel="stylesheet" type="text/css" href="./css/et-line.css">-->
 		
+		<style>
+			/* Set the size of the div element that contains the map */
+			#map {
+			  height: 400px;  /* The height is 400 pixels */
+			  width: 100%;  /* The width is the width of the web page */
+			 }
+		  </style>
+	  
 		
-		<script src="./js/jquery-2.1.0.min.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/blocs.min.js"></script>
-		<script src="./js/jqBootstrapValidation.js"></script>
-		<script src="./js/formHandler.js"></script>
+		<script src="./js/jquery-2.1.0.js" defer></script>
+		<script src="./js/bootstrap.js" defer></script>
+		<script src="./js/blocs.js" defer></script>
+		<script src="./js/jquery.touchSwipe.js" defer></script>
+		<script src="./js/gmaps.js" defer></script>
+		<script src="./js/jqBootstrapValidation.js" defer></script>
+		<!-- <script src="./js/formHandler.js"></script> -->
 		<title>La Chouette Agence - Nous contacter</title>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,7 +36,6 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'UA-93913391-1');
 		</script>
 		<!-- Analytics END -->
@@ -62,6 +71,7 @@
 					</nav>
 				</div>
 			</div>
+		
 			<!-- bloc-0 END -->
 
 			<!-- bloc-6 -->
@@ -109,7 +119,8 @@
 									<label for="brief">Brief de votre projet :</label><br>
 									<textarea id="message" class="form-control" rows="20" cols="100" required value="Ajoutez autant de détails que nécessaire"></textarea><br>
 								</div>
-									<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+									<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" type="submit"> 
+									<!--<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">-->
 									Envoyer mon message
 								</button>
 							</form>
@@ -120,11 +131,37 @@
 								2 place Sathonay 69001 Lyon<br>
 								Ouvert de 9h à 18h, du lundi au vendredi<br>
 							</p>
+							<!--GOOGLE MAPS -->
+
+								<h3>Retrouvez-nous ici :</h3>
+								<!--The div element for the map -->
+								<div id="map"></div>
+								<script>
+							// Initialize and add the map
+							function initMap() {
+							// The location of Uluru
+							var uluru = {lat: -25.344, lng: 131.036};
+							// The map, centered at Uluru
+							var map = new google.maps.Map(
+								document.getElementById('map'), {zoom: 4, center: uluru});
+							// The marker, positioned at Uluru
+							var marker = new google.maps.Marker({position: uluru, map: map});
+							}
+								</script>
+								<script defer
+								src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+								</script>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!--/GOOGLE MAPS -->
+
+
 			<!-- bloc-7 END -->
+
+
+				
 
 
 			<!-- Footer - bloc-8 -->
