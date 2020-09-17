@@ -8,7 +8,6 @@ body {
 }
 
 a {
-    color: #FFF;
     font-size: 18px;
 }
 
@@ -18,7 +17,7 @@ button {
     outline: none!important;
 }
 
-a:hover {
+a:hover, a:hover {
     text-decoration: none;
     cursor: pointer;
 }
@@ -130,7 +129,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+/*.d-bloc a .icon-md,*/
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -143,6 +142,8 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
+.col-sm-4 a:hover,
+.col-sm-4 a:focus,
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
@@ -157,11 +158,29 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: #FFF;
+}
+
+a,
+.d-bloc .a-btn:visited,
+.d-bloc .navbar a:visited,
+.d-bloc .navbar-brand:visited,
+.d-bloc a:visited .icon-sm,
+.d-bloc a:visited .icon-md,
+.d-bloc a:visited .icon-lg,
+.d-bloc a:visited .icon-xl,
+.d-bloc h1 a:visited,
+.d-bloc h2 a:visited,
+.d-bloc h3 a:visited,
+.d-bloc h4 a:visited,
+.d-bloc h5 a:visited,
+.d-bloc h6 a:visited,
+.d-bloc p a:visited {
+    color: rgba(255, 255, 255, .65);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, .5);
 }
 
 .d-bloc .btn-wire,
@@ -341,7 +360,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    color: #364577;
 }
 
 .navbar-toggle {
@@ -655,8 +674,7 @@ h5,
 h6,
 p,
 label,
-.btn,
-{
+.btn{
     font-family: "Open-sans",helvetica, Arial;
     font-weight: 400;
     color: #575757;
@@ -733,6 +751,15 @@ h4.citation {
 .social {
     max-width: 400px;
     margin: auto;
+}
+
+a.ltc-white.bold-link:focus, a.ltc-white.bold-link:hover {
+    color: #F3976C;
+}
+
+.col-sm-3 .text-center:focus, .text-center:focus, .social:focus {
+    border: 2px solid white;
+    margin : 0px 10px;
 }
 
 h2 {
@@ -823,9 +850,13 @@ h4 {
     color: #FFFFFF;
 }
 
-.btn-atomic-tangerine:hover {
-    background: #c27956;
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
+    background: #a06448;
     color: #FFFFFF;
+}
+
+.btn-atomic-tangerine:focus{
+    border: 2px solid white;
 }
 
 .ltc-white {
