@@ -27,7 +27,7 @@
 		<script src="./js/jquery.touchSwipe.js" defer></script>
 		<script src="./js/gmaps.js" defer></script>
 		<script src="./js/jqBootstrapValidation.js" defer></script>
-		<!-- <script src="./js/formHandler.js"></script> -->
+		<!-- <script src="./js/formHandler.js" defer></script> -->
 		<title>La Chouette Agence - Nous contacter</title>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -46,7 +46,7 @@
 		<div class="page-container">
 			
 			<!-- bloc-0 -->
-			<div class="bloc bgc-white l-bloc id="bloc-0">
+			<div class="bloc bgc-white l-bloc" id="bloc-0">
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
@@ -131,30 +131,42 @@
 								2 place Sathonay 69001 Lyon<br>
 								Ouvert de 9h à 18h, du lundi au vendredi<br>
 							</p>
-							<!--GOOGLE MAPS -->
-
-								<h3>Retrouvez-nous ici :</h3>
-								<!--The div element for the map -->
-								<div id="map"></div>
-								<script>
-							// Initialize and add the map
-							function initMap() {
-							// The location of Uluru
-							var uluru = {lat: -25.344, lng: 131.036};
-							// The map, centered at Uluru
-							var map = new google.maps.Map(
-								document.getElementById('map'), {zoom: 4, center: uluru});
-							// The marker, positioned at Uluru
-							var marker = new google.maps.Marker({position: uluru, map: map});
-							}
-								</script>
-								<script defer
-								src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-								</script>
+							<!--GOOGLE MAPS 
+							Localisation adresse : 45.769554, 4.830167
+							Code API : AIzaSyB9YI1GWAVtshy_4ZbpISjyf6lxJU45VME -->
+								
+							<h3>Retrouvez-nous ici :</h3>
+							<!--The div element for the map -->
+							<div id="map">
+								<div class="mapContainer">
+									<a class="direction-link" target="_blank" href="//maps.google.com/maps?f=d&amp;daddr=37.422230,-122.084058&amp;hl=en"> Get Directions</a>
+									<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9YI1GWAVtshy_4ZbpISjyf6lxJU45VME"></script>
+									<script>
+										var myCenter = new google.maps.LatLng(45.769554, 4.830167);
+										function initialize(){
+											var mapProp = {
+												center:myCenter,
+												zoom:12,
+												mapTypeId:google.maps.MapTypeId.ROADMAP
+											};
+										
+											var map = new google.maps.Map(document.getElementById("map"),mapProp);
+										
+											var marker = new google.maps.Marker({
+												position:myCenter,
+											});
+										
+											marker.setMap(map);
+										}
+										google.maps.event.addDomListener(window, 'load', initialize);
+									</script>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<!--/GOOGLE MAPS -->
 
 
