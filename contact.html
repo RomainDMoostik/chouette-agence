@@ -18,7 +18,7 @@
 			  height: 400px;  /* The height is 400 pixels */
 			  width: 100%;  /* The width is the width of the web page */
 			 }
-		  </style>
+		</style>
 	  
 		
 		<script src="./js/jquery-2.1.0.js" defer></script>
@@ -46,7 +46,7 @@
 		<div class="page-container">
 			
 			<!-- bloc-0 -->
-			<div class="bloc bgc-white l-bloc" id="bloc-0">
+			<nav class="bgc-white l-bloc" id="bloc-0">
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
@@ -70,19 +70,19 @@
 						</div>
 					</nav>
 				</div>
-			</div>
+			</nav>
 		
 			<!-- bloc-0 END -->
 
 			<!-- bloc-6 -->
-			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+			<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper top-header" id="bloc-6">
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
 							<h1 class="text-center hero-bloc-text tc-white">
 								Parlons web design !
 							</h1>
-							<p class="text-center mg-lg tc-white tight-width-whitespace">
+							<p class="mg-lg tc-white tight-width-whitespace">
 								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 								Vous voulez de l'aide pour réflichir à votre prochain web design ? <br>
 								Prendre renseignement pour savoir comment devenir un expert SEO ? <br>
@@ -103,20 +103,20 @@
 							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 								<div class="form-group">
 
-									<label for="nom">Nom :</label><br>
+									<label class="champ" for="nom">Nom :</label><br>
 									<input type="text" id="name" name="name" value="Paul" required><br>
-									<label for="Mail">Adresse email :</label><br>
+									<label class="champ" for="Mail">Adresse email :</label><br>
 									<input type="text" id="email" name="email" value="paul.bocuse@gmail.com" required><br>
 									
-									<label for="connu">Comment nous avez-vous connu ?</label><br>
-									<input type="radio" id="bouche-oreille" name="gender" value="bouche-oreille">
+									<label class="champ" for="connu">Comment nous avez-vous connu ?</label><br>
+									<input class="reponse" type="radio" id="bouche-oreille" name="gender" value="bouche-oreille">
 									<label for="bouche-oreille">Bouche à oreille</label><br>
 									<input type="radio" id="webmarket" name="gender" value="webmarket">
-									<label for="webmarket">Webmarketing</label><br>
+									<label class="reponse" for="webmarket">Webmarketing</label><br>
 									<input type="radio" id="autre" name="gender" value="autre">
-									<label for="autre">Autre</label><br>
+									<label class="reponse" for="autre">Autre</label><br>
 
-									<label for="brief">Brief de votre projet :</label><br>
+									<label class="champ" for="brief">Brief de votre projet :</label><br>
 									<textarea id="message" class="form-control" rows="20" cols="100" required value="Ajoutez autant de détails que nécessaire"></textarea><br>
 								</div>
 									<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" type="submit"> 
@@ -186,22 +186,22 @@
 							</p>
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
-									<div class="text-center">
+									<div class="text-center social-icon">
 										<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="text-center">
+									<div class="text-center social-icon">
 										<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="text-center">
+									<div class="text-center social-icon">
 										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
 									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
+								<div class="col-sm-3 ">
+									<div class="text-center social-icon">
 										<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 									</div>
 								</div>

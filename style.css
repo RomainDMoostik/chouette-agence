@@ -1,3 +1,18 @@
+* {
+    font-family: "Open-sans",helvetica, Arial;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    border-bottom: #F3976C 2px solid;
+}
+
+.top-header {
+    padding-top: 100px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +22,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+label, input {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+input {
+    margin: 0 0 30px 0;
+}
+
+label.champ {
+    font-weight: 600;
+}
 
 
 a {
@@ -37,7 +64,6 @@ a:hover, a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -506,7 +532,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
-    margin: 30% 0%;
+    margin: 1em 0%;
 }
 
 .icon-lg {
@@ -571,9 +597,15 @@ a:focus img {
     opacity: .5;
 }
 
+.social-icon:focus, .text-center:focus, .text-center.social-icon:focus {
+    border: 2px solid grey;
+    margin : 0px 20px;
+    color : blue;
+    width: 20%;
+}
+
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -685,7 +717,6 @@ h6,
 p,
 label,
 .btn{
-    font-family: "Open-sans",helvetica, Arial;
     font-weight: 400;
     color: #575757;
 }
@@ -714,7 +745,6 @@ label,
 
 p {
     font-size: 18px;
-    font-family: "Open-sans",helvetica, Arial;
     line-height: 26px;
 }
 
@@ -767,10 +797,6 @@ a.ltc-white.bold-link:focus, a.ltc-white.bold-link:hover {
     color: #F3976C;
 }
 
-.col-sm-3 .text-center:focus, .text-center:focus, .social:focus {
-    border: 2px solid white;
-    margin : 0px 10px;
-}
 
 h2 {
     font-size: 24px;
@@ -793,7 +819,6 @@ h3 {
 
 h1 {
     font-size: 20px;
-    font-family: "Open Sans";
     color: #333333;
 }
 
@@ -1108,12 +1133,44 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .icon-md {
+        margin: .4em 0;
+    }
+    img {
+        margin: auto;
+    }
+    .portfolio-row {
+        margin: auto;
+    }
+    .col-sm-6 {
+        margin-bottom: 4em;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .black-background {
+        padding: 40px 10px;
+    }
+    H2 {
+        font-size: 18px;
+        line-height: 1.4em;
+        max-width: 380px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+    .bloc .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-sm-12 {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 
