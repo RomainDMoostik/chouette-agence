@@ -98,24 +98,24 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+							<form id="form_1" action="https://romaindmoostik.github.io/chouette-agence" method="GET" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 								<div class="form-group">
 
 									<label class="champ" for="nom">Nom :</label><br>
-									<input type="text" id="name" name="name" value="Paul" required><br>
+									<input type="text" id="name" aria-label="nom" name="name" value="Paul" required><br>
 									<label class="champ" for="Mail">Adresse email :</label><br>
-									<input type="text" id="email" name="email" value="paul.bocuse@gmail.com" required><br>
+									<input type="text" id="email" aria-label="email" name="email" value="paul.bocuse@gmail.com" required><br>
 									
 									<label class="champ" for="connu">Comment nous avez-vous connu ?</label><br>
-									<input class="reponse" type="radio" id="bouche-oreille" name="gender" value="bouche-oreille">
-									<label for="bouche-oreille">Bouche à oreille</label><br>
-									<input type="radio" id="webmarket" name="gender" value="webmarket">
+									<input type="radio" aria-label="bouche à oreille" id="bouche-oreille" name="gender" value="bouche-oreille">
+									<label class="reponse" for="bouche-oreille">Bouche à oreille</label><br>
+									<input type="radio" aria-label="Webmarketing" id="webmarket" name="gender" value="webmarket">
 									<label class="reponse" for="webmarket">Webmarketing</label><br>
-									<input type="radio" id="autre" name="gender" value="autre">
+									<input type="radio" aria-label="Autre" id="autre" name="gender" value="autre">
 									<label class="reponse" for="autre">Autre</label><br>
 
 									<label class="champ" for="brief">Brief de votre projet :</label><br>
-									<textarea id="message" class="form-control" rows="20" cols="100" required value="Ajoutez autant de détails que nécessaire"></textarea><br>
+									<textarea id="message" aria-label="Remplissez ici le brief de votre projet" class="form-control" rows="20" cols="100" required value="Ajoutez autant de détails que nécessaire"></textarea><br>
 								</div>
 									<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" type="submit"> 
 									<!--<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">-->
@@ -175,7 +175,7 @@
 
 
 			<!-- Footer - bloc-8 -->
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<footer class="bloc bgc-dark-slate-blue d-bloc bg-t-edge bloc-bg-texture" id="bloc-8">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
@@ -185,29 +185,57 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-twitter icon-md" aria-label="Lien Twitter Chouette Agence"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-facebook icon-md" aria-label="Lien Facebook Chouette Agence"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md" aria-label="Lien Dribble Chouette Agence"></span></a>
 									</div>
 								</div>
-								<div class="col-sm-3 ">
+								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-instagram icon-md" aria-label="Lien Instagram Chouette Agence"></span></a>
 									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<p class="Liens">Partenaires</p>
+										<ul>
+											<li><a href="https://www.blogdumoderateur.com">Le blog du modérateur</a></li>
+											<li><a href="https://www.blogduwebdesign.com/">Le blog du webdesign</a></li>
+											<li><a href="http://designandhuman.com/">Design and Human</a></li>
+											<li><a href="https://www.digital-campus.fr/ecole/lyon">Digital Campus Lyon</a></li>
+										</ul>		
+								</div>
+								<div class="col-sm-4">
+									<p class="Liens">Nos autres projets</p>
+									<ul>
+										<li><a href="https://www.webdesignertrends.com/">Webdesigner Trends</a></li>
+										<li><a href="https://www.capdigital.com/">Cap Digital</a></li>
+										<li><a href="https://www.ixda-lyon.fr/">IxDA Lyon</a></li>
+										<li><a href="https://twitter.com/blendwebmix">Blend Web Mix</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<p class="Liens">A propos</p>
+									<ul>
+										<li><a href="index.html">Accueil</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="blog.html">Blog</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 			<!-- Footer - bloc-8 END -->
 
 		</div>
