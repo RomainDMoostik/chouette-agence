@@ -98,24 +98,24 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form id="form_1" action="https://romaindmoostik.github.io/chouette-agence" method="GET" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+							<form id="form_1" action="https://romaindmoostik.github.io/chouette-agence" method="GET" novalidate >
 								<div class="form-group">
 
-									<label class="champ" for="nom">Nom :</label><br>
-									<input type="text" id="name" aria-label="nom" name="name" value="Paul" required><br>
-									<label class="champ" for="Mail">Adresse email :</label><br>
-									<input type="text" id="email" aria-label="email" name="email" value="paul.bocuse@gmail.com" required><br>
+									<label id="nom" for="name">Nom :</label><br>
+									<input type="text" id="name" aria-label="nom" name="name" placeholder="Paul" required><br>
+									<label id="Mail" for="email">Adresse email :</label><br>
+									<input type="text" id="email" aria-label="email" name="email" placeholder="paul.bocuse@gmail.com" required><br>
 									
-									<label class="champ" for="connu">Comment nous avez-vous connu ?</label><br>
-									<input type="radio" aria-label="bouche à oreille" id="bouche-oreille" name="gender" value="bouche-oreille">
+									<label id="connaissance" for="autre">Comment nous avez-vous connu ?</label><br>
+									<input type="checkbox" aria-label="bouche à oreille" id="bouche-oreille" name="connu" value="bouche-oreille">
 									<label class="reponse" for="bouche-oreille">Bouche à oreille</label><br>
-									<input type="radio" aria-label="Webmarketing" id="webmarket" name="gender" value="webmarket">
+									<input type="checkbox" aria-label="Webmarketing" id="webmarket" name="connu" value="webmarket">
 									<label class="reponse" for="webmarket">Webmarketing</label><br>
-									<input type="radio" aria-label="Autre" id="autre" name="gender" value="autre">
+									<input type="checkbox" aria-label="Autre" id="autre" name="connu" value="autre">
 									<label class="reponse" for="autre">Autre</label><br>
 
-									<label class="champ" for="brief">Brief de votre projet :</label><br>
-									<textarea id="message" aria-label="Remplissez ici le brief de votre projet" class="form-control" rows="20" cols="100" required value="Ajoutez autant de détails que nécessaire"></textarea><br>
+									<label id="brief" for="message">Brief de votre projet :</label><br>
+									<textarea id="message" aria-label="Remplissez ici le brief de votre projet" class="form-control" rows="20" cols="100" required placeholder="Ajoutez autant de détails que nécessaire"></textarea><br>
 								</div>
 									<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" type="submit"> 
 									<!--<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">-->
