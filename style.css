@@ -597,11 +597,9 @@ a:focus img {
     opacity: .5;
 }
 
-.social-icon:focus, .text-center:focus, .text-center.social-icon:focus {
-    border: 2px solid grey;
-    margin : 0px 20px;
-    color : blue;
-    width: 20%;
+.text-center.social-icon a:focus{
+    border: 3px solid white;
+    padding: 5% 4% 3% 4%;
 }
 
 a[data-lightbox]:hover::before {
