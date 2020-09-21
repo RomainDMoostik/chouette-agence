@@ -9,7 +9,7 @@ nav {
     border-bottom: #F3976C 2px solid;
 }
 
-.top-header {
+header {
     padding-top: 100px;
 }
 
@@ -18,8 +18,6 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 label, input {
@@ -64,9 +62,6 @@ a:hover, a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -100,9 +95,6 @@ a:hover, a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
     background-size: auto!important;
 }
 
@@ -423,7 +415,6 @@ a,
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -599,7 +590,7 @@ a:focus img {
 
 .text-center.social-icon a:focus{
     border: 3px solid white;
-    padding: 5% 4% 3% 4%;
+    padding: 1.1em .7em .8em .7em;
 }
 
 a[data-lightbox]:hover::before {
@@ -616,14 +607,12 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 }
 
 a[data-lightbox]:hover img,
 a[data-lightbox]:focus img
  {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
 
@@ -765,7 +754,8 @@ h2.Intro {
     max-width: 60%;
 }
 
-h4.citation {
+blockquote {
+    color: #333;
     border: none;
     font-size: 20px;
     font-weight: 500;
@@ -789,6 +779,7 @@ h4.citation {
 .social {
     max-width: 400px;
     margin: auto;
+    padding-bottom: 1em;
 }
 
 a.ltc-white.bold-link:focus, a.ltc-white.bold-link:hover {
@@ -959,7 +950,7 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -977,10 +968,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -989,8 +976,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
     }
 }
 
@@ -1025,9 +1010,7 @@ h4 {
     .site-navigation {
         position: inherit;
         transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-    }
+        }
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -1063,7 +1046,6 @@ h4 {
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
-        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .navbar-brand img {
