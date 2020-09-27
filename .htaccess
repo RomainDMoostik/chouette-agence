@@ -30,6 +30,7 @@ mod_gzip_item_include file \.py$
 mod_gzip_item_include file \.cgi$
 mod_gzip_item_include file \.css$
 mod_gzip_item_include file \.js$
+mod_gzip_item_include file \.xml$
 mod_gzip_item_include mime ^application/javascript$
 mod_gzip_item_include mime ^application/x-javascript$
 mod_gzip_item_include mime ^text/.*
