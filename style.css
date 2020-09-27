@@ -29,10 +29,6 @@ input {
     margin: 0 0 30px 0;
 }
 
-input:invalid, input:focus:required:invalid {
-    border: 3px solid red;
-}
-
 label.champ {
     font-weight: 600;
 }
