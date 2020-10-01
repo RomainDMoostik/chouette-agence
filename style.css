@@ -49,6 +49,10 @@ a:hover, a:hover {
     cursor: pointer;
 }
 
+::placeholder {
+    opacity: 0.8;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;

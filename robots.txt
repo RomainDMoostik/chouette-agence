@@ -1,8 +1,12 @@
 # Group 1
 User-agent: *
-Allow: /index
+Disallow: /index
 
-# Group 1
+# Group 2
+User-agent: *
+Allow: /.
+
+# Group 3
 User-agent: *
 Allow: /contact
 
