@@ -1,3 +1,6 @@
+RewriteCond %{HTTP_HOST} ^www\.romaindmoostik.github.io/chouette-agence\.com$
+RewriteRule ^/?$ "http\:\/\/romaindmoostik.github.io/chouette-agence\.com\/" [R=301,L]
+
 RewriteEngine on
 #Check to see if browser can accept gzip files. If so and we have it - serve it!
 ReWriteCond %{HTTP:accept-encoding} gzip

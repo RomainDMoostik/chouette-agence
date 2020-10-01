@@ -1,0 +1,9 @@
+# Group 1
+User-agent: *
+Allow: /index
+
+# Group 1
+User-agent: *
+Allow: /contact
+
+Sitemap: https://romaindmoostik.github.io/chouette-agence/sitemap.xml
