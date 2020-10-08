@@ -3,20 +3,15 @@
 }
 
 nav {
-    position: fixed;
     width: 100%;
     z-index: 3;
     border-bottom: #F3976C 2px solid;
 }
 
-header {
-    padding-top: 100px;
-}
-
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background: #000;
     overflow-x: hidden;
 }
 
@@ -51,15 +46,6 @@ a:hover, a:hover {
 
 ::placeholder {
     opacity: 0.8;
-}
-
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -130,7 +116,7 @@ a:hover, a:hover {
 }
 
 .d-bloc {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc button:hover {
@@ -153,7 +139,6 @@ a:hover, a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-/*.d-bloc a .icon-md,*/
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -163,7 +148,7 @@ a:hover, a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .col-sm-4 a:hover,
@@ -182,7 +167,7 @@ a:hover, a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: #FFF;
+    color: #000;
 }
 
 a,
@@ -200,7 +185,7 @@ a,
 .d-bloc h5 a:visited,
 .d-bloc h6 a:visited,
 .d-bloc p a:visited {
-    color: rgba(255, 255, 255, .65);
+    color: rgba(0, 0, 0, .65);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -741,7 +726,7 @@ p {
 
 p.Liens {
     font-size: 18px;
-    color: #FFF;
+    color: #000;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
@@ -828,6 +813,10 @@ h4 {
     color: #FFFFFF;
 }
 
+.black {
+    color: #000;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -880,7 +869,7 @@ h4 {
 
 .btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     background: #a06448;
-    color: #FFFFFF;
+    color: #000;
 }
 
 .btn-atomic-tangerine:focus{

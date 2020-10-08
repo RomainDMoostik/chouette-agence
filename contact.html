@@ -22,7 +22,7 @@
 
 		<!-- Global site tag (gtag.min.js) - Google Analytics -->
 		<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-93913891-1"></script>
-		<script defer>
+		<script >
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
@@ -94,20 +94,20 @@
 								<div class="form-group">
 
 									<label id="nom" for="name">Nom :</label><br>
-									<input type="text" id="name" aria-label="nom" name="name" placeholder="Paul" required><br>
+									<input type="text" id="name" title="nom" name="name" placeholder="Paul" required><br>
 									<label id="Mail" for="email">Adresse email :</label><br>
-									<input type="text" id="email" aria-label="email" name="email" placeholder="paul.bocuse@gmail.com" required><br>
+									<input type="text" id="email" title="email" name="email" placeholder="paul.bocuse@gmail.com" required><br>
 									
 									<label id="connaissance" for="autre">Comment nous avez-vous connu ?</label><br>
-									<input type="checkbox" aria-label="bouche à oreille" id="bouche-oreille" name="connu" value="bouche-oreille">
+									<input type="checkbox" title="bouche à oreille" id="bouche-oreille" name="connu" value="bouche-oreille">
 									<label class="reponse" for="bouche-oreille">Bouche à oreille</label><br>
-									<input type="checkbox" aria-label="Webmarketing" id="webmarket" name="connu" value="webmarket">
+									<input type="checkbox" title="Webmarketing" id="webmarket" name="connu" value="webmarket">
 									<label class="reponse" for="webmarket">Webmarketing</label><br>
-									<input type="checkbox" aria-label="Autre" id="autre" name="connu" value="autre">
+									<input type="checkbox" title="Autre" id="autre" name="connu" value="autre">
 									<label class="reponse" for="autre">Autre</label><br>
 
 									<label id="brief" for="message">Brief de votre projet :</label><br>
-									<textarea id="message" aria-label="Remplissez ici le brief de votre projet" class="form-control" rows="20" cols="100" required placeholder="Ajoutez autant de détails que nécessaire"></textarea><br>
+									<textarea id="message" title="Remplissez ici le brief de votre projet" class="form-control" rows="20" cols="100" required placeholder="Ajoutez autant de détails que nécessaire"></textarea><br>
 								</div>
 									<button class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero" type="submit"> 
 									<!--<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">-->
@@ -127,8 +127,8 @@
 							<div id="map">
 								<div class="mapContainer">
 									<a class="direction-link" target="_blank" href="//maps.google.com/maps?f=d&amp;daddr=37.422230,-122.084058&amp;hl=en"> Get Directions</a>
-									<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9YI1GWAVtshy_4ZbpISjyf6lxJU45VME"></script>
-									<script defer>
+									<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9YI1GWAVtshy_4ZbpISjyf6lxJU45VME"></script>
+									<script >
 										var myCenter = new google.maps.LatLng(45.769554, 4.830167);
 										function initialize(){
 											var mapProp = {
@@ -164,7 +164,7 @@
 
 
 			<!-- Footer - bloc-8 -->
-			<footer class="bloc bgc-dark-slate-blue d-bloc bg-t-edge bloc-bg-texture" id="bloc-8">
+			<footer class="bloc bgc-atomic-tangerine d-bloc bg-t-edge bloc-bg-texture" id="bloc-8">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
@@ -174,22 +174,22 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-twitter icon-md" aria-label="Lien Twitter Chouette Agence"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-twitter icon-md" title="Lien Twitter Chouette Agence"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-facebook icon-md" aria-label="Lien Facebook Chouette Agence"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-facebook icon-md" title="Lien Facebook Chouette Agence"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md" aria-label="Lien Dribble Chouette Agence"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-dribbble icon-md" title="Lien Dribble Chouette Agence"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center social-icon">
-										<a class="social" href="index.html"><span class="fa fa-instagram icon-md" aria-label="Lien Instagram Chouette Agence"></span></a>
+										<a class="social" href="index.html"><span class="fa fa-instagram icon-md" title="Lien Instagram Chouette Agence"></span></a>
 									</div>
 								</div>
 							</div>
